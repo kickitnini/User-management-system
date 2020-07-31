@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/md5/jquery.js"></script>
+    <script type="text/javascript" src="js/md5/jquery.md5.js"></script>
+    <script type="text/javascript" src="js/del.js"></script>
+    <title>HTML5+CSS3+JS</title>
+</head>
+<body>
+
+<header>
+    <span id="id-span-login" class="login">管理员:&nbsp;</span>
+    <nav>HTML5+CSS3+JS - 用户信息管理系统（管理员） - 删除</nav>
+</header>
+<hr>
+<form name="frm-del" onsubmit="return on_del_submit();">
+    <table cellspacing="8" cellpadding="8" style="border-collapse: collapse;">
+        <caption>编辑用户</caption>
+        <tr>
+            <td class="td-right">
+                id(readable only)：
+            </td>
+            <td>
+                <input type="text" id="id-id" name="userid" value="" readonly>
+            </td>
+            <td class="td-right">
+                <span id="id-span-id">只读（不可编辑）</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                用户ID(User ID)*：
+            </td>
+            <td>
+                <input type="text" id="id-userid" name="userid" readonly>
+            </td>
+            <td class="td-right">
+                <span id="id-span-userid"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                密码(Password)*：
+            </td>
+            <td>
+                <input type="password" id="id-password" name="password" readonly>
+            </td>
+            <td class="td-right">
+                <span id="id-span-pwd"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                再次输入密码(Password)*：
+            </td>
+            <td>
+                <input type="password" id="id-repassword" name="repassword" readonly>
+            </td>
+            <td class="td-right">
+                <span id="id-span-repwd"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                用户全名(Full Name)*：
+            </td>
+            <td>
+                <input type="text" id="id-username" name="username" readonly>
+            </td>
+            <td class="td-right">
+                <span id="id-span-username"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                用户界级别(Level)*：
+            </td>
+            <td>
+                <select id="id-level" name="level" readonly>
+                    <option value="0" selected>请选择...</option>
+                    <option value="1">admin</option>
+                    <option value="2">manager</option>
+                    <option value="3">guest</option>
+                </select>
+            </td>
+            <td class="td-right">
+                <span id="id-span-level"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+            </td>
+            <td class="td-right">
+                <button type="submit" id="id-submit">确认删除</button>
+            </td>
+            <td class="td-right">
+                <span id="id-span-submit"></span>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

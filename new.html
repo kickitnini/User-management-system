@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/md5/jquery.js"></script>
+    <script type="text/javascript" src="js/md5/jquery.md5.js"></script>
+    <script type="text/javascript" src="js/new.js"></script>
+    <title>HTML5+CSS3+JS</title>
+</head>
+<body>
+    <header>
+        <span id="id-span-login" class="login">管理员：&nbsp;</span>
+        <nav>HTML5+CSS3+JS-用户信息管理系统（管理员）-添加</nav>
+    </header>
+    <hr>
+    <form name="frm-login" onsubmit="return on_new_submit();">
+        <table cellspacing="8" cellpadding="8" style="border-collapse: collapse;">
+          <caption>新增用户</caption>
+            <tr>
+                <td class="td-right">用户ID(User ID)*:</td>
+                <td><input type="text" id="id-userid" onblur="on_userid_blur(this.id);"></td>
+                <td class="td-right"><span id="id-span-userid"></span></td>
+            </tr>
+            <tr>
+                <td class="td-right">密码(Password)*:</td>
+                <td><input type="password" id="id-password" onblur="on_pwd_blur(this.id);"></td>
+                <td class="td-right"><span id="id-span-pwd"></span></td>
+            </tr>
+            <tr>
+                <td class="td-right">再次输入密码(Password)*:</td>
+                <td><input type="password" id="id-repassword" onblur="on_repwd_blur(this.id,'id-password');"></td>
+                <td class="td-right"><span id="id-span-repwd"></span></td>
+            </tr>
+            <tr>
+                <td class="td-right">用户全名(Full Name)*:</td>
+                <td><input type="text" id="id-username" onblur="on_username_blur(this.id,'id-password');"></td>
+                <td class="td-right"><span id="id-span-username"></span></td>
+            </tr>
+            <tr>
+                <td class="td-right">用户级别(Level)*:</td>
+                <td>
+                    <select id="id-level" onchange="on_level_change(this.id);">
+                        <option value="0" selected>请选择...</option>
+                        <option value="1" selected>管理员</option>
+                        <option value="2" selected>一般管理员</option>
+                        <option value="3" selected>一般用户</option>
+                    </select>
+                </td>
+                <td class="td-right"><span id="id-span-level"></span></td>
+            </tr>
+            <tr>
+                <td class="td-right">注：带*为必填项</td>
+                <td><button type="submit" id="id-submit" disabled="disabled">添加</button></td>
+                <td class="td-right"><span id="id-span-submit"></span></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

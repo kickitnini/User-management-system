@@ -1,0 +1,90 @@
+/**
+ * CSS - style.css
+*/
+body {
+    font: normal 14px/1.2em arial, verdana;
+}
+header {
+    margin: 8px;
+    padding: 8px;
+}
+nav {
+    margin: 4px;
+    padding: 4px;
+    font: bold 20px arial, sans-serif;
+    text-align: center;
+}
+hr {
+    clear: both;
+}
+form {
+    position: relative;
+}
+table {
+    position: relative;
+    margin: 8px auto;
+}
+caption {
+    margin: 8px;
+    padding: 8px;
+    font: bold 16px arial, sans-serif;
+}
+td {
+    margin: 8px;
+    padding: 8px;
+}
+td.td-right {
+    text-align: right;
+}
+input {
+    width: 128px;
+}
+div {
+    margin: 16px;
+    padding: 8px;
+    border: 1px solid #666;
+    text-align: center;
+}
+div.div-outer {
+    margin: 32px;
+    padding:32px;
+    background-color: #ccc;
+}
+div.div-inner {
+    margin: 32px;
+    padding:32px;
+    background-color: #888;
+}
+div.div-pos {
+    border: 0px solid #666;
+    text-align: left;
+}
+span {
+    margin: 16px;
+    padding: 8px;
+    text-align: center;
+}
+span.login {
+    float: left;
+    margin: 4px;
+    padding: 4px;
+}
+span.logout {
+    float: right;
+    margin: 4px;
+    padding: 4px;
+}
+p {
+    margin: 16px;
+    padding: 8px;
+    text-align: center;
+}
+ul {
+    float: left;
+    list-style: none;
+}
+canvas {
+    border:2px solid black;
+    float:left;
+    margin:15px;
+}

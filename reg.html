@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/md5/jquery.js"></script>
+    <script type="text/javascript" src="js/md5/jquery.md5.js"></script>
+    <script type="text/javascript" src="js/reg.js"></script>
+    <title>HTML5+CSS3+JS</title>
+</head>
+<body>
+<header>
+    <nav>HTML5+CSS3+JS - 用户信息管理系统（注册）</nav>
+</header>
+<hr>
+<form name="frm-login" onsubmit="return on_reg_submit();">
+    <table cellspacing="8" cellpadding="8" style="border-collapse: collapse;">
+        <caption>新用户注册(New user register)</caption>
+        <tr>
+            <td class="td-right">
+                用户ID(User ID)*：
+            </td>
+            <td>
+                <input type="text" id="id-userid" name="userid" onblur="on_userid_blur(this.id);">
+            </td>
+            <td class="td-right">
+                <span id="id-span-userid"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                密码(Password)*：
+            </td>
+            <td>
+                <input type="password" id="id-password" name="password" onblur="on_pwd_blur(this.id);">
+            </td>
+            <td class="td-right">
+                <span id="id-span-pwd"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                再次输入密码(Password)*：
+            </td>
+            <td>
+                <input type="password" id="id-repassword" name="repassword" onblur="on_repwd_blur(this.id, 'id-password');">
+            </td>
+            <td class="td-right">
+                <span id="id-span-repwd"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                用户全名(Full Name)*：
+            </td>
+            <td>
+                <input type="text" id="id-username" name="username" onblur="on_username_blur(this.id);">
+            </td>
+            <td class="td-right">
+                <span id="id-span-username"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                注：带*为必填项.
+            </td>
+            <td class="td-right">
+                <button type="submit" id="id-submit" disabled="disabled">注册</button>
+            </td>
+            <td class="td-right">
+                <span id="id-span-submit"></span>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

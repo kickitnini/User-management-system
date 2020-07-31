@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <meta name="author" content="king">
+    <meta name="revised" content="king,05/26/2017">
+    <meta name="generator" content="WebStorm 2016.2.4">
+    <meta name="description" content="CSS & CSS3">
+    <meta name="keywords" content="HTML5, CSS, JavaScript">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/md5/jquery.js"></script>
+    <script type="text/javascript" src="../js/md5/jquery.md5.js"></script>
+    <title>HTML5+CSS3+JS</title>
+</head>
+<body>
+    <header>
+        <nav>HTML5+CSS3+JS - 用户信息管理系统（数据库初始化）</nav>
+    </header>
+    <hr>
+    <p>Now init...</p>
+    <script type="text/javascript">
+        $(function() {
+            var u_admin = {};
+            u_admin.id = '1001';
+            u_admin.userid = 'king';
+            u_admin.pwd = '123456';
+            u_admin.pwdmd5 = $.md5('123456');
+            u_admin.name = 'God King';
+            u_admin.level = 'admin';
+            u_admin.reserved = "1";
+            localStorage.setItem(u_admin.id, JSON.stringify(u_admin));
+            var u_manager = {};
+            u_manager.id = '2001';
+            u_manager.userid = 'tina';
+            u_manager.pwd = '123456';
+            u_manager.pwdmd5 = $.md5('123456');
+            u_manager.name = 'Tina Wang';
+            u_manager.level = 'manager';
+            u_manager.reserved = "2";
+            localStorage.setItem(u_manager.id, JSON.stringify(u_manager));
+            var u_guest = {};
+            u_guest.id = '3001';
+            u_guest.userid = 'cici';
+            u_guest.pwd = '123456';
+            u_guest.pwdmd5 = $.md5('123456');
+            u_guest.name = 'Cici Wang';
+            u_guest.level = 'guest';
+            u_guest.reserved = "3";
+            localStorage.setItem(u_guest.id, JSON.stringify(u_guest));
+            //localStorage.clear();
+        });
+    </script>
+</body>
+</html>

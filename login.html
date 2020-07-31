@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/md5/jquery.js"></script>
+    <script type="text/javascript" src="js/md5/jquery.md5.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <title>HTML5+CSS3+JS</title>
+</head>
+<body>
+    <header>
+        <nav>HTML5+CSS3+JS-用户信息管理系统（登录）</nav>
+    </header>
+    <hr>
+    <form name="frm-login" onsubmit="return on_login_submit();">
+        <table id="id-user-info" style="border-collapse: collapse;">
+            <caption>登录系统</caption>
+            <tr>
+                <td class="td-right">用户ID:</td>
+                <td><input type="text" id="userid" onblur="on_userid_blur(this.id);"></td>
+                <td class="td-right"><span id="id-span-userid"></span></td>
+            </tr>
+            <tr>
+                <td class="td-right">密码：</td>
+                <td><input type="password" id="password" onblur="on_pwd_blur(this.id);"></td>
+                <td class="td-right"><span id="id-span-pwd"></span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td-right">
+                    <button type="submit" id="id-submit" disabled="disabled">登录</button>
+                </td>
+                <td class="td-right">
+                    <a href="reg.html">新用户注册</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
